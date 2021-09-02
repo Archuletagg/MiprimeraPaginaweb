@@ -4,10 +4,7 @@ html{
 body{
 	width: 1000px;
 	margin: 10px auto;
-	text-align: justify-all;
-	background: #0F2027;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+	background: linear-gradient(to right, #c31432, #240b36);
 }
 
 a:link, a:visited, a:active{
@@ -16,29 +13,35 @@ a:link, a:visited, a:active{
 nav{
 	width: 1000px;
 	height: 100px;
-	background-color: white;
+	background: linear-gradient(to right, #c31432, #240b36);
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+/* NAV */
 #lista{
-	float: right;
-	margin: 24px 309px;
-	background-color: white;
+	color: red;
 }
-
-#lista li{
+.menu__item{
 	display: inline-block;
-	margin: 17px 1px 5px 0;
-	width: 100px;
+	margin: 21px 67px;
+	width: 130px;
 	text-align: center;
 	border-radius: .1875rem;
-	padding: 5px;
+	padding: 20px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: black	;
+	color: red;
 }
 
-#lista li a{
-	color: black;
+.menu__item a{
+	color: red;
 	font-size: 15px;
 }
+
+.menu__item:hover{
+	background-color: white;
+	transition: 1s;
+}
+
 
 .logo{
 	margin: 10px;
@@ -46,6 +49,7 @@ nav{
 
 .title{
 	text-align: center;
+	border-radius: 5px;
 	padding-top:1px;
 	margin: 20px auto 0;
 	font-size: 1.8em;
@@ -63,6 +67,7 @@ nav{
 #contenedor{
 	display: flex; 
 	justify-content: center; 
+	border-radius: 5px 5px 0 0;
 	width: 100%;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-top: -36px;
@@ -89,35 +94,35 @@ nav{
 }
 
 .cont-1, .cont-2{
+	border-radius: 5px 5px 0 0;
 	margin: 10px;
 } 
-
 .cont-1 h3{
 	width: auto;
 	margin: 35px auto;
 	text-align: center;
-	border-radius:10px;
+	border-radius:10px 0 10px 0;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 20px;
 	font-family: 'Bebas Neue', cursive;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
 }
 
 .cont-2 h3{
 	width: auto;
 	margin: 35px auto;
 	text-align: center;
+	border-radius:10px 0 10px 0;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius:10px;
 	padding: 20px;
 	font-family: 'Bebas Neue', cursive;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
 }
 
 #conocenos{
 	display: flex;
-	justify-content:;
 	width: 1000px;
+	border-radius: 5px 5px 0 0;
 	margin-top:20px ;
 	height: 380px;
 	background-color: white;
@@ -132,13 +137,15 @@ p{
 .texto{
 	margin: 50px 0 50px 50px;
 	width: auto;
+	border-radius: 5px 5px 0 0;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .texto-2{
 	margin: 57px 56px 58px 514px;
-    width: 429px;	
+   width: 429px;	
 	float: right;
+	border-radius: 5px 5px 0 0;
 	display: flex;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -168,23 +175,43 @@ p{
 	height: 500px;
 	margin-top: 20px;
 	padding-top: 145px;
-	border: 1px solid;
+	border-radius: 5px 5px 0 0;
 	text-align: center;
 	background-color: white;
+	background-image:url(https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+	background-size: cover;
+	opacity: 0.5;
 }
 
-.titulo-cont{
-	font-size: 3em;
+#contenedor-fin:hover{
+	color: white;
+	opacity: 1;
+	font-size: 20px;
+	transition: 1s;
 }
 
-#contenedor-fin span{
-	text-align: justify;
+#contenedor-fin h1{
+	color: white;
+	font-size: 4em;
+	font-family: 'Bebas Neue', cursive;
+}
+
+#contenedor-fin p{
+	text-align: justify-all;
+	margin-top: -90px;
+	font-size: 0.8em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
 }
 .iconos-redes ul li{
 	display: inline-block;
-	margin: 5px 15px 5px 0;
+	margin: -10px 0px 5px 0;
 	width: 100px;
 	text-align: center;
 	border-radius: .1875rem;
-	padding: 5px;
+	text-decoration: none;
+}
+
+#contenedor-fin h1 a{
+	color: white;
 }
